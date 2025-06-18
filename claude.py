@@ -20,9 +20,7 @@ client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
 message = client.messages.create(
     model="claude-sonnet-4-20250514",
     #model="claude-3-5-haiku-20241022",
-    #figure out what to set max_tokens to. 
-    #too low and it will cut off, too high and it will be expensive
-    max_tokens=5000, 
+    max_tokens=5000, #tends to put out ~3k tokens, and this parameter is required, so we overestimate
     messages=[
         {
             "role": "user",
@@ -44,7 +42,20 @@ if message.usage.server_tool_use.web_search_requests:
 else:
     print("Did not search the web")
 
-#print the output
-text_blocks = [block.text for block in message.content if block.type == "text"]
-answer = " ".join(text_blocks)
+#find the last tool use
+last_tool_index = -1
+for i, block in enumerate(message.content):
+    if block.type == "tool_use":
+        last_tool_index = i
+
+#THIS PART ISN'T WORKING
+#collect text blocks after the last tool use.
+#these are the answer blocks; the text before is more of chain-of-thought
+if last_tool_index >= 0:
+    answer_blocks = [block.text for block in message.content[last_tool_index + 1:] if block.type == "text"]
+else:
+    answer_blocks = [block.text for block in message.content if block.type == "text"]
+
+#join the answer blocks into a single string and print
+answer = " ".join(answer_blocks)
 print(answer)

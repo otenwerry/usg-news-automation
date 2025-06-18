@@ -46,7 +46,9 @@ Specificity: 1/2
 message = client.messages.create(
     model="claude-sonnet-4-20250514",
     #model="claude-3-5-haiku-20241022",
-    max_tokens=1000,
+    #figure out what to set max_tokens to. 
+    #too low and it will cut off, too high and it will be expensive
+    max_tokens=5000, 
     messages=[
         {
             "role": "user",

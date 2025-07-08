@@ -33,7 +33,7 @@ message = client.messages.create(
     ],
     tools =[
         {
-            "type": "web_search",
+            "type": "web_search_20250305",
             "name": "web_search",
             "max_uses": 10
         }

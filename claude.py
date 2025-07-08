@@ -54,3 +54,5 @@ else:
     answer = full_text
 
 print(answer)
+print("-"*100)
+print(full_text)

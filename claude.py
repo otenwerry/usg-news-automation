@@ -23,6 +23,7 @@ message = client.messages.create(
     model="claude-sonnet-4-20250514",
     #model="claude-3-5-haiku-20241022",
     max_tokens=5000, #tends to put out ~3k tokens, and this parameter is required, so we overestimate
+    temperature=0,
     system=system_prompt,
     messages=[
         {

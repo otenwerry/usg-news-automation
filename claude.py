@@ -40,26 +40,17 @@ message = client.messages.create(
     ]
 )
 
-#print how many times was search used
-if message.usage.server_tool_use.web_search_requests:
-    print(f"Searched the web {message.usage.server_tool_use.web_search_requests} times")
+#get the full text of the output, avoiding the search tool blocks
+full_text = ""
+for block in message.content:
+    if block.type == "text":
+        full_text += block.text
+
+#start from the answer header, if possible
+if "## Answer" in full_text:
+    answer_start = full_text.index("## Answer") + len("## Answer")
+    answer = full_text[answer_start:].strip()
 else:
-    print("Did not search the web")
+    answer = full_text
 
-#find the last tool use
-last_tool_index = -1
-for i, block in enumerate(message.content):
-    if block.type == "tool_use":
-        last_tool_index = i
-
-#THIS PART ISN'T WORKING
-#collect text blocks after the last tool use.
-#these are the answer blocks; the text before is more of chain-of-thought
-if last_tool_index >= 0:
-    answer_blocks = [block.text for block in message.content[last_tool_index + 1:] if block.type == "text"]
-else:
-    answer_blocks = [block.text for block in message.content if block.type == "text"]
-
-#join the answer blocks into a single string and print
-answer = " ".join(answer_blocks)
 print(answer)

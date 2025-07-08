@@ -8,11 +8,13 @@ now = datetime.now()
 date = now.strftime("%B %d, %Y")
 time = now.strftime("%H:%M:%S")
 
-#read in the prompt from prompt.txt
+#read in the prompts and pass in the date and time
 with open("prompt.txt", "r") as file:
     prompt = file.read()
-
 prompt = prompt.format(date=date, time=time)
+
+with open("system_prompt.txt", "r") as file:
+    system_prompt = file.read()
 
 #summon claude and give it the prompt
 client = anthropic.Anthropic(api_key=os.getenv("ANTHROPIC_API_KEY"))
@@ -21,6 +23,7 @@ message = client.messages.create(
     model="claude-sonnet-4-20250514",
     #model="claude-3-5-haiku-20241022",
     max_tokens=5000, #tends to put out ~3k tokens, and this parameter is required, so we overestimate
+    system=system_prompt,
     messages=[
         {
             "role": "user",

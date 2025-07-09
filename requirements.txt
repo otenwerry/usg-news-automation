@@ -1,0 +1,2 @@
+anthropic==0.57.1
+slack_sdk==3.35.0

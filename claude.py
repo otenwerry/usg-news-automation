@@ -11,7 +11,7 @@ now = datetime.now()
 date = now.strftime("%B %d, %Y")
 time = now.strftime("%H:%M:%S")
 
-#read in the prompts and pass in the date and time
+'''#read in the prompts and pass in the date and time
 with open("prompt.txt", "r") as file:
     prompt = file.read()
 prompt = prompt.format(date=date, time=time)
@@ -58,7 +58,7 @@ else:
 
 print(answer)
 print("-"*100)
-print(full_text)
+print(full_text)'''
 
 
 summary = "test"

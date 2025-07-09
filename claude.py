@@ -11,7 +11,7 @@ now = datetime.now()
 date = now.strftime("%B %d, %Y")
 time = now.strftime("%H:%M:%S")
 
-'''#read in the prompts and pass in the date and time
+#read in the prompts and pass in the date and time
 with open("prompt.txt", "r") as file:
     prompt = file.read()
 prompt = prompt.format(date=date, time=time)
@@ -56,12 +56,12 @@ if "## Answer" in full_text:
 else:
     answer = full_text
 
-print(answer)
-print("-"*100)
-print(full_text)'''
+#print(answer)
+#print("-"*100)
+#print(full_text)
 
 
-summary = "test"
+summary = "Today's news summary: \n" + answer
 #send the summary into Slack
 client = WebClient(token=os.getenv("EIP_SLACK_TOKEN"))
 channel_id = os.getenv("EIP_SLACK_CHANNEL_ID")

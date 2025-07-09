@@ -1,6 +1,9 @@
 import anthropic
 import os
 from datetime import datetime
+import os
+from slack_sdk import WebClient
+from slack_sdk.errors import SlackApiError
 
 #claude needs search to find date, so we pass
 #it in manually to save a search
@@ -56,3 +59,18 @@ else:
 print(answer)
 print("-"*100)
 print(full_text)
+
+
+summary = "test"
+#send the summary into Slack
+client = WebClient(token=os.getenv("EIP_SLACK_TOKEN"))
+channel_id = os.getenv("EIP_SLACK_CHANNEL_ID")
+
+try:
+    client.chat_postMessage(
+        channel=channel_id,
+        text=summary
+    )
+except SlackApiError as e:
+    print(f"Slack API error: {e}")
+    raise

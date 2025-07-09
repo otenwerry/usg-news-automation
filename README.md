@@ -1,0 +1,3 @@
+A custom news summarizer that scans recent news and identifies events that are of interest to EIP. After outputting a list of 5 articles, these get sent into Slack through the Slack API. 
+
+While new iterations of the prompt can go through preliminary testing on the Claude website, they should ultimately be tested here: we have temperature set to 0, whereas the website does not let you modify temperature; and we have a system prompt, which you cannot set on the website. 

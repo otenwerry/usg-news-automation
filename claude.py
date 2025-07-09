@@ -17,7 +17,7 @@ with open("system_prompt.txt", "r") as file:
     system_prompt = file.read()
 
 #summon claude and give it the prompt
-client = anthropic.Anthropic(api_key=os.getenv("EIP_API_KEY"))
+client = anthropic.Anthropic(api_key=os.getenv("EIP_ANTHROPIC_API_KEY"))
 
 message = client.messages.create(
     model="claude-sonnet-4-20250514",

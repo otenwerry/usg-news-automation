@@ -3,6 +3,7 @@ name: Twice Weekly Claude Run
 on:
   schedule:
     - cron: '0 12 * * Mon,Thu'
+  workflow_dispatch:
 
 jobs:
   run_claude:

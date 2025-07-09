@@ -30,6 +30,8 @@ jobs:
 
       - name: Run Claude
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          EIP_API_KEY: ${{ secrets.EIP_API_KEY }}
+          EIP_SLACK_TOKEN: ${{ secrets.EIP_SLACK_TOKEN }}
+          EIP_SLACK_CHANNEL_ID: ${{ secrets.EIP_SLACK_CHANNEL_ID }}
         run: |
           python claude.py

@@ -9,9 +9,12 @@ Then, pick the 5 articles out of these that seem most important for our purposes
 </analysis>
 
 <answer>
-Begin this section with the text "## Answer" on its own line.
 After completing the analysis above, list the 5 selected articles, using the following format:
+"## Answer
+
 Article 1: Trump Administration Seeks to…, May 8, 2025 at 4:32 pm, https://… 
 This article describes the Trump administration’s attempt to… 
+
+Article 2: ..."
 Don't include any other text, just the list of 5 articles formatted this way.
 </answer>

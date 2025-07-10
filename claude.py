@@ -1,6 +1,6 @@
 import anthropic
 import os
-from datetime import datetime
+from datetime import datetime, timedelta
 import os
 from slack_sdk import WebClient
 from slack_sdk.errors import SlackApiError
@@ -60,8 +60,8 @@ else:
 #print("-"*100)
 #print(full_text)
 
-
-summary = "Today's news summary: \n" + answer
+seven_days_ago = (now - timedelta(days=7)).strftime("%B %d, %Y")
+summary = f"Here is a summary of this week's news, from {seven_days_ago} to {date}: \n\n" + answer
 #send the summary into Slack
 client = WebClient(token=os.getenv("EIP_SLACK_TOKEN"))
 channel_id = os.getenv("EIP_SLACK_CHANNEL_ID")

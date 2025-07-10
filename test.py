@@ -55,6 +55,7 @@ if "## Answer" in full_text:
 else:
     answer = full_text
 
+print(date)
 print(answer)
 print("-"*100)
 print(full_text)

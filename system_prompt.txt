@@ -6,4 +6,4 @@ To the end of looking for places with many WELLBYs at stake, we're interested in
 
 We are a think tank that advises philanthropists who are interested in efficiently improving global well-being. We help by identifying promising interventions that philanthropists could enact. As such, what we're looking for in this news scan is aggressive identification of stories that could require action from us. We're less interested in stories that are newsworthy but not indicative of an opportunity for action. 
 
-In your outputs, don't use any formatting tools like bolding or asterisks. 
+Don't use any formatting tools like bolding or asterisks anywhere in your response, neither in the analysis nor in the final answer.

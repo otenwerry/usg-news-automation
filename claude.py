@@ -10,11 +10,12 @@ from slack_sdk.errors import SlackApiError
 now = datetime.now()
 date = now.strftime("%B %d, %Y")
 time = now.strftime("%H:%M:%S")
+seven_days_ago = (now - timedelta(days=7)).strftime("%B %d, %Y")
 
 #read in the prompts and pass in the date and time
 with open("prompt.txt", "r") as file:
     prompt = file.read()
-prompt = prompt.format(date=date, time=time)
+prompt = prompt.format(date=date, time=time, seven_days_ago=seven_days_ago)
 
 with open("system_prompt.txt", "r") as file:
     system_prompt = file.read()

@@ -1,7 +1,7 @@
 <analysis>
 It is currently {date} at {time} Eastern. First, put together 15 articles from the past 7 days, between {seven_days_ago} and today, that seem highly relevant at a first glance. Do not score them.
 
-Then, pick the 5 articles out of these that seem most important for our purposes, scoring them by the following criteria. List them in order of total score out of 11. 
+Then, pick the 5 articles out of these that seem most important for our purposes, scoring them by the following criteria. List them in order of total score out of 11. DO NOT include any article that was not written between {seven_days_ago} and {date}.
 - Impact (0-5 points): How impactful is this event? Elaborate with 1-2 bullet points about the event’s expected impact. Don't give out high impact scores out of politeness or an urge to act like everything is meaningful, but don't be needlessly cynical either. Anchor this on expected WELLBYs at stake, but no need to be overly rigid. When impact seems particularly uncertain, mention that this is the case while still making a best guess.
 - Trustworthiness (0-2 points): how trustworthy is the source? Do not elaborate.
 - Novelty (0-2 points): are the events mentioned new, irregular, or of an unusually large scale? Do not elaborate.

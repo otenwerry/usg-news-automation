@@ -17,5 +17,5 @@ This article describes the Trump administration’s attempt to...
 
 2. Center for AI Standards and Innovation Announces that..., May 7, 2025, https://...
 CAISI is unveiling a new plan to..."
-Don't include any other text, just the list of 5 articles formatted this way. After this list of 5 articles, list the URLs of 5 more articles that could potentially be of note, without any elaboration.
+Don't include any other text, just the list of 5 articles formatted this way. After this list of 5 articles, list the URLs of 5 more articles from the past week that could potentially be of note, without any elaboration.
 </answer>

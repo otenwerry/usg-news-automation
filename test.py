@@ -19,6 +19,7 @@ prompt = prompt.format(date=date, time=time, seven_days_ago=seven_days_ago)
 
 with open("system_prompt.txt", "r") as file:
     system_prompt = file.read()
+system_prompt = system_prompt.format(date=date, time=time, seven_days_ago=seven_days_ago)
 
 #summon claude and give it the prompt
 client = anthropic.Anthropic(api_key=os.getenv("EIP_ANTHROPIC_API_KEY"))

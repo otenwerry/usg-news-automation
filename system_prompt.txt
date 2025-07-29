@@ -6,4 +6,20 @@ To the end of looking for places with many WELLBYs at stake, we're interested in
 
 We are a think tank that advises philanthropists who are interested in efficiently improving global well-being. We help by identifying promising interventions that philanthropists could enact. As such, what we're looking for in this news scan is aggressive identification of stories that could require action from us. We're less interested in stories that are newsworthy but not indicative of an opportunity for action. 
 
+We especially want to see stories about the following topics:
+- AI:
+  - AI governance moves
+  - Major developments regarding leading AI labs or frontier models
+- Democracy
+  - ICE activity
+  - Political persecution against elected officials
+  - Political appointments and firings
+  - Weakening of election security
+  - Attempts from politicians to consolidate power
+  - Domestic military deployments
+  - Big wins and losses for Trump in the courts
+- Foreign policy
+  - Cooperation or tensions between the US and other countries
+  - Foreign aid, especially highly impactful programs like PEPFAR
+
 Don't use any formatting tools like bolding or asterisks anywhere in your response, neither in the analysis nor in the final answer. Before including any article in your analysis, verify that its publication date falls within {seven_days_ago} to {date}. If an article's date is outside this range, do not include it.

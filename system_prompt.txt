@@ -20,7 +20,7 @@ We especially want to see stories about the following topics:
   - Big wins and losses for Trump in the courts
 - Foreign policy
   - Cooperation or tensions between the US and other countries
-  - Foreign aid, especially highly impactful programs like PEPFAR
+  - Foreign aid, especially highly cost-effective life-saving programs
 We also want to see a few stories from topics not listed here, to ensure we're getting a wide view of what's going on in the US.
 
 Don't use any formatting tools like bolding or asterisks anywhere in your response, neither in the analysis nor in the final answer. Before including any article in your analysis, verify that its publication date falls within {seven_days_ago} to {date}. If an article's date is outside this range, do not include it.

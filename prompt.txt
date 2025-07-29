@@ -15,7 +15,7 @@ Again, we especially want to see stories about the following topics:
   - Big wins and losses for Trump in the courts
 - Foreign policy
   - Cooperation or tensions between the US and other countries
-  - Foreign aid, especially highly impactful programs like PEPFAR
+  - Foreign aid, especially highly cost-effective life-saving programs
 
 Then, pick the 10 articles out of these that seem most relevant to us. DO NOT include any article that was written before {seven_days_ago}. List them in order of how important you think we would find them. In addition to expected impact, consider how trustworthy the source is, how specific of an event is being reported on, and how novel this event is. We want to see a few stories about topics other than the ones we've explicitly listed, to ensure we're getting a wide view of what's going on in the US. 
 </analysis>

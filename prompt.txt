@@ -1,21 +1,33 @@
 <analysis>
-It is currently {date} at {time} Eastern. First, put together 15 articles from the past 7 days, between {seven_days_ago} and today, that seem highly relevant at a first glance. Do not score them. Recall that relevance is based on expected WELLBYs, and that we're especially interested in topics related to AI, democracy, and major foreign policy moves.
+It is currently {date} at {time} Eastern. First, put together 20 articles from the past 7 days, between {seven_days_ago} and today, that seem highly relevant to us at a first glance. 
 
-Then, pick the 5 articles out of these that seem most important for our purposes, scoring them by the following criteria. List them in order of total score out of 11. DO NOT include any article that was not written between {seven_days_ago} and {date}.
-- Impact (0-5 points): How impactful is this event? Elaborate with 1-2 bullet points about the event’s expected impact. Don't give out high impact scores out of politeness or an urge to act like everything is meaningful, but don't be needlessly cynical either. Anchor this on expected WELLBYs at stake, but no need to be overly rigid. When impact seems particularly uncertain, mention that this is the case while still making a best guess.
-- Trustworthiness (0-2 points): how trustworthy is the source? Do not elaborate.
-- Novelty (0-2 points): are the events mentioned new, irregular, or of an unusually large scale? Do not elaborate.
-- Specificity (0-2 points): does it report a concrete, specific event? Do not elaborate.
+Again, we especially want to see stories about the following topics:
+- AI:
+  - AI governance moves
+  - Major developments regarding leading AI labs or frontier models
+- Democracy
+  - ICE activity
+  - Political persecution against elected officials
+  - Political appointments and firings
+  - Weakening of election security
+  - Attempts from politicians to consolidate power
+  - Domestic military deployments
+  - Big wins and losses for Trump in the courts
+- Foreign policy
+  - Cooperation or tensions between the US and other countries
+  - Foreign aid, especially highly impactful programs like PEPFAR
+
+Then, pick the 10 articles out of these that seem most relevant to us. DO NOT include any article that was written before {seven_days_ago}. List them in order of how important you think we would find them. In addition to expected impact, consider how trustworthy the source is, how specific of an event is being reported on, and how novel this event is. We want to see a few stories about topics other than the ones we've explicitly listed, to ensure we're getting a wide view of what's going on in the US. 
 </analysis>
 
 <answer>
-After completing the analysis above, list the 5 selected articles, using the following format:
+After completing the analysis above, list the 10 selected articles, using the following format:
 "## Answer
 
-1. Trump Administration Seeks to…, May 8, 2025, https://...
+1. Trump Administration Seeks to…, {seven_days_ago}, https://...
 This article describes the Trump administration’s attempt to...
 
-2. Center for AI Standards and Innovation Announces that..., May 7, 2025, https://...
+2. Center for AI Standards and Innovation Announces that..., {date}, https://...
 CAISI is unveiling a new plan to..."
-Don't include any other text, just the list of 5 articles formatted this way. DO NOT include your scoring method. After this list of 5 articles, list the headlines and URLs of 5 more articles from the past week that could potentially be of note, without any description or other elaborations. Pick these last 5 articles to minimize overlap with the first 5 articles, to ensure that we receive the most amount of information possible.
+Don't include any other text, just the list of 10 articles formatted this way.
 </answer>
